@@ -5,9 +5,10 @@
     num1 = 2;
     console.log(num);
 
-    //참조, 값 주소를 복사
+    //참조, 저장된 주소를 복사
     var array = [0,0,0,0];
-    var array1 = array;
+    var array1 = array; // 얕은 복사
+    // 변수이름만 2개가 됨.
     array1[0] = 1;
     console.log(array);
 </script>

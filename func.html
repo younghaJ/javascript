@@ -1,0 +1,26 @@
+<script>
+    // function program(){
+    //     const result = confirm("낮입니까?");
+    //     //result는 변하지 않는 값
+    //     if(result){
+    //         alert("수업을 들어야 합니다");
+    //     }   else    {
+    //         alert("꿀잠");
+    //     }
+    // }
+
+    function program(){
+        let result = false;
+        const correct = Math.floor(Math.random() * 1000);
+        const answer = prompt(`${correct}를 입력해 주세요.`); // prompt 문자열로 반환
+        result = (correct == answer);
+
+        if(result){
+            alert("정답");
+        }   else    {
+            alert("오답");
+        }
+    }
+
+    program();
+</script>
