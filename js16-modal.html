@@ -67,7 +67,9 @@
         }
 
         message.innerText = messageInput.value;
+        messageInput.value = ""; //다시 빈칸으로 설정
 
+        //모달창 닫기
         myModal.hide();
     };
 
